@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, } from '@angular/core';
+import { FormGroup, FormControl, Validators} from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'my-app';
+  websiteList: any = ['tutsmake.com', 'abc.com', 'w3alert.com']
+
+  OnchangeSelect(event : any){
+    console.log('hello');
+  }
+
 }
